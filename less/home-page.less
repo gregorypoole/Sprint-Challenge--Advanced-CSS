@@ -99,4 +99,20 @@
     }
   }
 }
-}// home
+
+@media @phone {
+  .sky, .launch {
+      display: none;
+  }
+  .home {
+      max-width: @phone-width;
+      width: 100%;
+      img {
+          width: 500px;
+      }
+  }
+
+  .walk {
+      .display-flex(center, center);
+      flex-direction: column-reverse;
+  }
